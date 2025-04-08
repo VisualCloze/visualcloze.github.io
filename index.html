@@ -1,0 +1,303 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>VisualCloze</title>
+<link href="./files/style.css" rel="stylesheet">
+<link href="./files/button.css" rel="stylesheet">
+<link href="./files/slider.css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logo/visualcloze.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/visualcloze.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/visualcloze.png">
+<script type="text/javascript" src="./files/jquery.mlens-1.0.min.js"></script> 
+<script type="text/javascript" src="./files/jquery.js"></script>
+<script src="./files/util.js" content="text/javascript"></script>
+<script src="./files/slider.js" content="text/javascript"></script>
+<link rel="manifest" href="/site.webmanifest">
+<!-- <script src="util.js" content="text/javascript"></script> -->
+
+</head>
+<body>
+<div class="content">
+  <div class="logo" style="text-align: center;">
+    <a href="index.html">
+      <img src="./assets/logo/visualcloze.png">
+    </a>
+  </div>
+  <h1>
+    <span class="sansfont acmefont" style="color: #4a90e2;"><strong>VisualCloze</strong></span>
+    <span class="sansfont acmefont" style="color: black;">: <strong>A Universal Image Generation Framework via Visual In-Context Learning</strong></span></h1>
+  <p id="authors"><a href="https://github.com/lzyhha">Zhong-Yu Li</a	><sup>1,2*</sup> 
+    <a href="https://ruoyidu.github.io/">Ruoyi Du</a><sup>2,3*</sup> 
+    <a>Juncheng Yan</a><sup>2</sup>
+    <a href="https://le-zhuo.com/">Le Zhuo</a><sup>2</sup>
+    <a href="https://paper99.github.io/">Zhen Li</a><sup>2</sup>
+    <a href="https://scholar.google.com/citations?user=_go6DPsAAAAJ&hl=zh-CN">Peng Gao</a><sup>2</sup>
+    <a>Zhanyu Ma</a><sup>3</sup>
+    <a href="https://mmcheng.net/cmm/">Ming-Ming Cheng</a><sup>1&#x2709;</sup>
+    <br>
+  <span style="font-size: 18px"><sup>1</sup>VCIP, CS, Nankai University &nbsp;&nbsp;&nbsp;&nbsp; 
+    <sup>2</sup>Shanghai AI Laboratory <br>
+    <sup>3</sup>Beijing University of Posts and Telecommunications
+  </span></p>
+  <div style="text-align: center;">
+    <span style="font-size: 14px"><sup>*</sup> Equal contribution  &nbsp;&nbsp;&nbsp;&nbsp;  &#x2709; Corresponding Authors</span>
+  </div>
+  <div style="text-align: center;">
+    <video width=80% autoplay muted loop controls>
+      <source src="assets/video/visualcloze.mp4" type="video/mp4">
+    </video>
+  </div>
+  <h3 style="text-align:center">
+    <em><span style="color:rgb(253, 60, 94);">Support a wide range of in-domain tasks</span>, and <span style="color:rgb(84, 151, 233);">generalize to unseen ones</span>.</em>
+    <!-- <em>Let us create photos/paintings/avatars for <span style="color:rgb(253, 60, 94);">anyone</span> in <span style="color:rgb(241, 73, 177);">any style</span> <span style="color:rgb(84, 151, 233);">within seconds</span>.</em></h3>    <font size="+2"> -->
+          <p style="text-align: center;">
+            <a href="https://huggingface.co/papers/2312.04461" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/TencentARC/PhotoMaker" target="_blank">[Code]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://huggingface.co/spaces/TencentARC/PhotoMaker-V2" target="_blank">[Online Demo]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://huggingface.co/TencentARC/PhotoMaker" target="_blank">[Model Card]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://huggingface.co/TencentARC/PhotoMaker" target="_blank">[Dataset Card]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	    <!-- (<font color="#C70039">new!</font>) <a href="https://github.com/TencentARC/PhotoMaker" target="_blank">[Dataset]</a> &nbsp;&nbsp;&nbsp;&nbsp; -->
+            <a href="files/bibtex.txt" target="_blank">[BibTeX]</a>
+          </p>
+    </font>
+    <p style="text-align: center;"> 
+      <!-- We are currently organizing the code and demo to ensure that everyone can enjoy the wonderful journey that PhotoMaker may bring as soon as possible.
+      If you want to support and cheer for us, please star our project. ^_^ -->
+    </p>
+  </div>
+
+  <div class="content">
+    <h2 style="text-align: center; margin-bottom: 30px; font-size: clamp(20px, 3vw, 24px); color: #333;">Highlights</h2>
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <p style="text-align: center; margin-bottom: 30px; font-size: 18px;">
+        Through in-context learning, VisualCloze can:
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; padding: 0 20px;">
+        <!-- Highlight 1 -->
+        <a href="#supported-tasks" style="text-decoration: none;">
+          <div style="background: #f8f8f8; padding: 20px; border-radius: 10px; border-left: 4px solid #4a90e2; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <h3 style="margin: 0 0 10px 0; color: #4a90e2; font-size: 18px;">Wide Task Support</h3>
+            <p style="margin: 0; color: #666; line-height: 1.5;">
+              Support various in-domain tasks.
+            </p>
+          </div>
+        </a>
+
+        <!-- Highlight 2 -->
+        <a href="#generalization" style="text-decoration: none;">
+          <div style="background: #f8f8f8; padding: 20px; border-radius: 10px; border-left: 4px solid #50C878; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <h3 style="margin: 0 0 10px 0; color: #50C878; font-size: 18px;">Strong Generalization</h3>
+            <p style="margin: 0; color: #666; line-height: 1.5;">
+              Generalize to <strong>unseen tasks</strong> through in-context learning.
+            </p>
+          </div>
+        </a>
+
+        <!-- Highlight 3 -->
+        <a href="#unified-processing" style="text-decoration: none;">
+          <div style="background: #f8f8f8; padding: 20px; border-radius: 10px; border-left: 4px solid #FF6B6B; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <h3 style="margin: 0 0 10px 0; color: #FF6B6B; font-size: 18px;">Unified Processing</h3>
+            <p style="margin: 0; color: #666; line-height: 1.5;">
+              Unify multiple tasks into one step and generate both target image and intermediate results.
+            </p>
+          </div>
+        </a>
+
+        <!-- Highlight 4 -->
+        <a href="#reverse-generation" style="text-decoration: none;">
+          <div style="background: #f8f8f8; padding: 20px; border-radius: 10px; border-left: 4px solid #9B59B6; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <h3 style="margin: 0 0 10px 0; color: #9B59B6; font-size: 18px;">Reverse Generation</h3>
+            <p style="margin: 0; color: #666; line-height: 1.5;">
+              Support reverse-engineering a set of conditions from a target image.
+            </p>
+          </div>
+        </a>
+
+        <div style="text-align: center; margin: 20px 0;">
+          <div style="display: inline-flex; gap: 20px; font-size: 16px;">
+            <a href="#abstract" style="color: #4a90e2; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+              <span>📄</span>
+              <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#4a90e2'" onmouseout="this.style.borderColor='transparent'">Abstract</span>
+            </a>
+            <span style="color: #666;">•</span>
+            <a href="#method" style="color: #50C878; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+              <span>⚙️</span>
+              <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#50C878'" onmouseout="this.style.borderColor='transparent'">Method</span>
+            </a>
+            <span style="color: #666;">•</span>
+            <a href="#dataset" style="color: #FF6B6B; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+              <span>📊</span>
+              <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#FF6B6B'" onmouseout="this.style.borderColor='transparent'">Dataset</span>
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 20px;"><span style="color: #4a90e2;"><strong>Click to quickly jump</strong></span></p>
+  </div>
+
+  <div class="content" style="padding: 25px 50px;" id="supported-tasks">
+    <h2 style="text-align: center;">Supported in-domain Tasks</h2>
+    <p style="text-align: center;">A set of selected examples are shown below. 
+    <p style="text-align: center;">Generating <span style="color:#F37E7E;"><strong>target images</strong></span> given <span style="color:#00C9A7;"><strong>visual prompts.</strong></span></p>
+    <img class="teaser-img" src="./assets/demo/seen.jpg" style="width:100%;">
+  </div>
+
+  <div class="content" style="padding: 25px 50px;" id="generalization">
+    <h2 style="text-align: center;">Generalization to <span style="color:rgb(253, 60, 94);"><strong>Unseen Tasks</strong></span> via In-Context Learning</h2>
+    <p>The model, if relying solely on language instructions, struggles to generalize to different tasks. 
+      Instead, in-context learning allows the model to understand and perform tasks from a few demonstrations.</p>
+      
+    <p style="text-align: center;"><em>Click the arrows to see more examples</em></p>
+
+    <div class="slideshow-container" id="slider1">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="./assets/demo/face.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="./assets/demo/edit_transfer.jpg" style="width:100%">
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1, 0)" data-slider="0"></span>
+      <span class="dot" onclick="currentSlide(2, 0)" data-slider="0"></span>
+    </div>
+
+
+  </div>
+
+  <div class="content" style="padding: 25px 50px;">
+    <h2 style="text-align: center;">More <span style="color:rgb(253, 60, 94);"><strong>unseen tasks</strong></span> examples</h2>
+    
+    <!-- <img class="teaser-img" src="./assets/demo/unseen.jpg" style="width:100%;"> -->
+
+    <p style="text-align: center;"><em>Click the arrows to see more examples</em></p>
+    <div class="slideshow-container" id="slider2">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="./assets/demo/unseen1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="./assets/demo/unseen2.jpg" style="width:100%">
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1, 1)" data-slider="1"></span>
+      <span class="dot" onclick="currentSlide(2, 1)" data-slider="1"></span>
+    </div>
+
+  </div>
+
+  <div class="content" style="padding: 25px 50px;" id="unified-processing">
+    <h2 style="text-align: center;">Unifying Multiple Tasks into One Step</h2>
+    <p>Interestingly, 
+      we find that our method can unify multiple tasks into one step and 
+      generate not only the target image but also the intermediate results.</p>
+    <img class="teaser-img" src="./assets/demo/consolidate.jpg" style="width:100%;">
+    
+  </div>
+
+  <div class="content" style="padding: 25px 50px;" id="reverse-generation">
+    <h2 style="text-align: center;">Reverse Generation</h2>
+    <p style="text-align: center;">Our method supports reverse generation, i.e., reverse-engineering a set of conditions from a target. 
+    <img class="teaser-img" src="./assets/demo/reverse.jpg" style="width:100%;">
+  </div>
+
+<div class="content" id="abstract">
+  <h2 style="text-align:center;">Abstract</h2>
+  <p>Recent progress in diffusion models significantly advances various image generation tasks. 
+    However, the current mainstream approach remains focused on building task-specific models, 
+    which have limited efficiency when supporting a wide range of different needs. 
+    While universal models attempt to address this limitation, they face critical challenges, 
+    including generalizable task definition, appropriate task distributions, and unified architectural design. 
+    In this work, we propose <span style="color:rgb(253, 60, 94);"><strong>VisualCloze</strong></span>, 
+    a <strong>universal image generation framework</strong>, to tackle these challenges. 
+    Unlike existing methods that rely on language-based task descriptions, leading to task ambiguity and weak generalization, 
+    we integrate visual in-context learning, allowing models to identify tasks from demonstrations. 
+    Meanwhile, the inherent sparsity of visual task distributions hampers the learning of transferable knowledge across tasks. 
+    To this end, we introduce Graph200K, a graph-structured dataset that establishes various interrelated tasks, 
+    enhancing task density and knowledge transfer. 
+    Furthermore, we uncover an intrinsic alignment between image infilling and in-context learning, 
+    enabling us to leverage the strong generative priors of pre-trained infilling models without modifying their architectures. 
+    Experiments demonstrate that VisualCloze achieves strong performance <span style="color:rgb(60, 253, 94);"><strong>across various in-domain tasks</strong></span> 
+    while <span style="color:rgb(84, 151, 233);"><strong>generalizing to unseen tasks</strong></span> in few-shot and zero-shot settings.
+  </p>
+</div>
+<!-- <div class="content">
+  <h2>Background</h2>
+  <p> Given a particular subject such as clock (shown in the real images on the left), it is very challenging to generate it in different contexts with state-of-the-art text-to-image models, while maintaining high fidelity to its key visual features. Even with dozens of iterations over a text prompt that contains a detailed description of the appearance of the clock (<em>"retro style yellow alarm clock with a white clock face and a yellow number three on the right part of the clock face in the jungle"</em>), the Imagen model [Saharia et al., 2022] can't reconstruct its key visual features (third column). Furthermore, even models whose text embedding lies in a shared language-vision space and can create semantic variations of the image, such as DALL-E2 [Ramesh et al., 2022], can neither reconstruct the appearance of the given subject nor modify the context (second column). In contrast, our approach (right) can synthesize the clock with high fidelity and in new contexts (<em>"a [V] clock in the jungle"</em>).</p>
+  <br>
+  <img class="summary-img" src="./assets/background.png" style="width:100%;"> <br>
+</div> -->
+<div class="content" id="method">
+  <h2 style="text-align:center;">Method</h2>
+  <p> We provide a few in-context examples as visual demonstrations to clarify the desired task. 
+    Specifically, we find that a consistent objective between image in-filling and our in-context learning based universal generative models. 
+    Through concatenating all input and output images into a grid-layout image, the objective of a task is to fill the output area.
+    To this end, we build <span style="color:rgb(253, 60, 94);"><strong>VisualCloze</strong></span> upon advanced general-purpose infilling models, i.e., FLUX.1-Fill-dev, without additional modifications in the architecture.
+  <br>
+  <img class="summary-img" src="./assets/method/method.jpg" style="width:80%;"> <br>
+  <p>A potential limitation lies in the difficulty of composing a grid image from in-context examples with varying aspect ratios. 
+    To overcome this issue, 
+    we leverage the 3D-RoPE in FLUX.1-Fill-dev to perform context concatenation along the temporal dimension, 
+    effectively overcoming this issue without introducing any noticeable performance degradation.</p>
+  <br>
+  <img class="summary-img" src="./assets/method/3drope.jpg" style="width:60%;">
+</div>
+
+<div class="content" id="dataset">
+  <h2 style="text-align:center;">Dataset</h2>
+  <p> In natural language processing, tasks overlap significantly, facilitating strong cross-task learning ability. 
+    In contrast, visual tasks are inherently distinct, posing challenges for vision models to achieve similar generalization ability via instruction tuning. 
+    To ease this issue, we introduce a Graph Structured Multi-Task Dataset, named <span style="color:rgb(253, 60, 94);"><strong>Graph200K</strong></span>.
+    Graph200K is built upon the <a href="https://huggingface.co/datasets/Yuanshi/Subjects200K">Subjects200K</a> dataset. 
+    Each image is annotated for five meta-tasks, including 1) conditional generation, 2) image restoration, 3) image editing, 4) IP preservation, and 5) style transfer. 
+    <strong>These tasks can also be combined to form a wide range of complex tasks.</strong>
+  <br>
+  <img class="summary-img" src="assets/method/graph200k.jpg" style="width:60%;"> <br>
+  <!-- <img class="summary-img" src="./assets/results.png" style="width:100%;"> -->
+  <p>We leave the discussions about data construction in our paper.</p>
+</div>
+
+
+<!-- <div class="content">
+  <h2>Societal Impact</h2>
+  <p>This project aims to provide users with an effective tool for synthesizing personal subjects (animals, objects) in different contexts. While general text-to-image models might be biased towards specific attributes when synthesizing images from text, our approach enables the user to get a better reconstruction of their desirable subjects. On contrary, malicious parties might try to use such images to mislead viewers. This is a common issue, existing in other generative models approaches or content manipulation techniques. Future research in generative modeling, and specifically of personalized generative priors, must continue investigating and revalidating these concerns.</p>
+  <br>
+</div> -->
+<div class="content">
+  <h2>BibTex</h2>
+  <code> @inproceedings{li2023photomaker,<br>
+  &nbsp;&nbsp;title={PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding},<br>
+  &nbsp;&nbsp;author={Li, Zhen and Cao, Mingdeng and Wang, Xintao and Qi, Zhongang and Cheng, Ming-Ming and Shan, Ying},<br>
+  &nbsp;&nbsp;booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+  &nbsp;&nbsp;year={2024}<br>
+  } </code> 
+</div>
+<div class="content" id="acknowledgements">
+  <p>
+    <!-- <strong>Acknowledgements</strong>: -->
+    <!-- If you want an image removed from this page or have other requests, please contact us at <a href="mailto:zhenli1031@gmail.com">zhenli1031@gmail.com</a>. -->
+    <!-- <br> -->
+    Our project page is borrowed from <a href="https://dreambooth.github.io/">DreamBooth</a>.
+    <!-- Recycling a familiar <a href="https://chail.github.io/latent-composition/">template</a> ;). --> 
+  </p>
+</div>
+<script content="text/javascript">initArtSelection(); </script>
+<script content="text/javascript">initRealSelection(); </script>
