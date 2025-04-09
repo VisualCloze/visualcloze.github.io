@@ -1,0 +1,6 @@
+@article{li2025visualcloze,
+  title={VisualCloze : A Universal Image Generation Framework via Visual In-Context Learning},
+  author={Li, Zhong-Yu and Du, ruoyi and Yan, Juncheng and Zhuo, Le and Li, Zhen and Gao, Peng and Ma, Zhanyu and Cheng, Ming-Ming},
+  booktitle={arXiv preprint arxiv:},
+  year={2025}
+}
