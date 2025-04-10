@@ -54,7 +54,7 @@
           <p style="text-align: center;">
             <a href="" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://github.com/lzyhha/VisualCloze" target="_blank">[Code]</a> &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://huggingface.co/spaces/TencentARC/PhotoMaker-V2" target="_blank">[Online Demo]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://huggingface.co/spaces/VisualCloze/" target="_blank">[Online Demo]</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://huggingface.co/VisualCloze/VisualCloze" target="_blank">[Model Card]</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://huggingface.co/VisualCloze/Graph200K" target="_blank">[Dataset Card]</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="files/bibtex.txt" target="_blank">[BibTeX]</a>
@@ -67,7 +67,7 @@
   </div>
 
   <div class="content">
-    <h2 style="text-align: center; margin-bottom: 30px; font-size: clamp(20px, 3vw, 24px); color: #333;">Highlights</h2>
+    <h2 style="text-align: center; margin-bottom: 30px; font-size: clamp(20px, 3vw, 24px); color:red;"><strong>Highlights</strong></h2>
     <div style="max-width: 1000px; margin: 0 auto;">
       <p style="text-align: center; margin-bottom: 30px; font-size: 18px;">
         Through in-context learning, VisualCloze can:
@@ -112,41 +112,39 @@
             </p>
           </div>
         </a>
+      </div>
 
-        <div style="text-align: center; margin: 20px 0;">
-          <div style="display: inline-flex; gap: 20px; font-size: 16px;">
-            <a href="#abstract" style="color: #4a90e2; text-decoration: none; display: flex; align-items: center; gap: 4px;">
-              <span>📄</span>
-              <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#4a90e2'" onmouseout="this.style.borderColor='transparent'">Abstract</span>
-            </a>
-            <span style="color: #666;">•</span>
-            <a href="#method" style="color: #50C878; text-decoration: none; display: flex; align-items: center; gap: 4px;">
-              <span>⚙️</span>
-              <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#50C878'" onmouseout="this.style.borderColor='transparent'">Method</span>
-            </a>
-            <span style="color: #666;">•</span>
-            <a href="#dataset" style="color: #FF6B6B; text-decoration: none; display: flex; align-items: center; gap: 4px;">
-              <span>📊</span>
-              <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#FF6B6B'" onmouseout="this.style.borderColor='transparent'">Dataset</span>
-            </a>
-          </div>
+      <div style="text-align: center; margin: 20px 0;">
+        <div style="display: inline-flex; gap: 20px; font-size: 16px;">
+          <a href="#abstract" style="color: #4a90e2; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+            <span>📄</span>
+            <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#4a90e2'" onmouseout="this.style.borderColor='transparent'">Abstract</span>
+          </a>
+          <span style="color: #666;">•</span>
+          <a href="#method" style="color: #50C878; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+            <span>⚙️</span>
+            <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#50C878'" onmouseout="this.style.borderColor='transparent'">Method</span>
+          </a>
+          <span style="color: #666;">•</span>
+          <a href="#dataset" style="color: #FF6B6B; text-decoration: none; display: flex; align-items: center; gap: 4px;">
+            <span>📊</span>
+            <span style="border-bottom: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#FF6B6B'" onmouseout="this.style.borderColor='transparent'">Dataset</span>
+          </a>
         </div>
-
-        
       </div>
     </div>
     <p style="text-align: center; margin-top: 20px;"><span style="color: #4a90e2;"><strong>Click to quickly jump</strong></span></p>
   </div>
 
   <div class="content" style="padding: 25px 50px;" id="supported-tasks">
-    <h2 style="text-align: center;">Supported in-domain Tasks</h2>
+    <h2 style="text-align: center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>Supported in-domain Tasks</strong></h2>
     <p style="text-align: center;">A set of selected examples are shown below. 
     <p style="text-align: center;">Generating <span style="color:#F37E7E;"><strong>target images</strong></span> given <span style="color:#00C9A7;"><strong>visual prompts.</strong></span></p>
     <img class="teaser-img" src="./assets/demo/seen.jpg" style="width:100%;">
   </div>
 
   <div class="content" style="padding: 25px 50px;" id="generalization">
-    <h2 style="text-align: center;">Generalization to <span style="color:rgb(253, 60, 94);"><strong>Unseen Tasks</strong></span> via In-Context Learning</h2>
+    <h2 style="text-align: center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>Generalization to <span style="color:rgb(253, 60, 94);"><strong>Unseen Tasks</strong></span> via In-Context Learning</strong></h2>
     <p>The model, if relying solely on language instructions, struggles to generalize to different tasks. 
       Instead, in-context learning allows the model to understand and perform tasks from a few demonstrations.</p>
       
@@ -176,7 +174,7 @@
   </div>
 
   <div class="content" style="padding: 25px 50px;">
-    <h2 style="text-align: center;">More <span style="color:rgb(253, 60, 94);"><strong>unseen tasks</strong></span></h2>
+    <h2 style="text-align: center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>More <span style="color:rgb(253, 60, 94);"><strong>unseen tasks</strong></span></strong></h2>
     
     <!-- <img class="teaser-img" src="./assets/demo/unseen.jpg" style="width:100%;"> -->
 
@@ -204,7 +202,7 @@
   </div>
 
   <div class="content" style="padding: 25px 50px;" id="unified-processing">
-    <h2 style="text-align: center;">Unifying Multiple Tasks into One Step</h2>
+    <h2 style="text-align: center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>Unifying Multiple Tasks into One Step</strong></h2>
     <p>Interestingly, 
       we find that our method can unify multiple tasks into one step and 
       generate not only the target image but also the intermediate results.</p>
@@ -213,13 +211,13 @@
   </div>
 
   <div class="content" style="padding: 25px 50px;" id="reverse-generation">
-    <h2 style="text-align: center;">Reverse Generation</h2>
+    <h2 style="text-align: center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>Reverse Generation</strong></h2>
     <p style="text-align: center;">Our method supports reverse generation, i.e., reverse-engineering a set of conditions from a target. 
     <img class="teaser-img" src="./assets/demo/reverse.jpg" style="width:100%;">
   </div>
 
 <div class="content" id="abstract">
-  <h2 style="text-align:center;">Abstract</h2>
+  <h2 style="text-align:center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>Abstract</strong></h2>
   <p>Recent progress in diffusion models significantly advances various image generation tasks. 
     However, the current mainstream approach remains focused on building task-specific models, 
     which have limited efficiency when supporting a wide range of different needs. 
@@ -245,7 +243,7 @@
   <img class="summary-img" src="./assets/background.png" style="width:100%;"> <br>
 </div> -->
 <div class="content" id="method">
-  <h2 style="text-align:center;">Method</h2>
+  <h2 style="text-align:center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>Method</strong></h2>
   <p> We provide a few in-context examples as visual demonstrations to clarify the desired task. 
     Specifically, we find that a consistent objective between image in-filling and our in-context learning based universal generative models. 
     Through concatenating all input and output images into a grid-layout image, the objective of a task is to fill the output area.
@@ -261,7 +259,7 @@
 </div>
 
 <div class="content" id="dataset">
-  <h2 style="text-align:center;">Dataset</h2>
+  <h2 style="text-align:center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>Dataset</strong></h2>
   <p> In natural language processing, tasks overlap significantly, facilitating strong cross-task learning ability. 
     In contrast, visual tasks are inherently distinct, posing challenges for vision models to achieve similar generalization ability via instruction tuning. 
     To ease this issue, we introduce a Graph Structured Multi-Task Dataset, named <span style="color:rgb(253, 60, 94);"><strong>Graph200K</strong></span>.
@@ -281,7 +279,7 @@
   <br>
 </div> -->
 <div class="content">
-  <h2>BibTex</h2>
+  <h2 style="text-align:center; font-size: clamp(20px, 3vw, 24px); color: #333;"><strong>BibTex</strong></h2>
   <code> @inproceedings{li2023photomaker,<br>
   &nbsp;&nbsp;title={PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding},<br>
   &nbsp;&nbsp;author={Li, Zhen and Cao, Mingdeng and Wang, Xintao and Qi, Zhongang and Cheng, Ming-Ming and Shan, Ying},<br>
