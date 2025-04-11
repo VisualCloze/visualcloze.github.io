@@ -223,19 +223,22 @@
   <p>Recent progress in diffusion models significantly advances various image generation tasks. 
     However, the current mainstream approach remains focused on building task-specific models, 
     which have limited efficiency when supporting a wide range of different needs. 
-    While universal models attempt to address this limitation, they face critical challenges, 
-    including generalizable task definition, appropriate task distributions, and unified architectural design. 
-    In this work, we propose <span style="color:rgb(253, 60, 94);"><strong>VisualCloze</strong></span>, 
-    a <strong>universal image generation framework</strong>, to tackle these challenges. 
-    Unlike existing methods that rely on language-based task descriptions, leading to task ambiguity and weak generalization, 
-    we integrate visual in-context learning, allowing models to identify tasks from demonstrations. 
+    While universal models attempt to address this limitation, 
+    they face critical challenges, including generalizable task instruction, 
+    appropriate task distributions, and unified architectural design. 
+    To tackle these challenges, we propose <span style="color:rgb(253, 60, 94);"><strong>VisualCloze</strong></span>, 
+    a <strong>universal image generation framework</strong>, 
+    which supports a wide range of <span style="color:rgb(84, 151, 233);"><strong>in-domain tasks</strong></span>, 
+    generalization to <span style="color:rgb(84, 151, 233);"><strong>unseen ones</strong></span>, 
+    <span style="color:rgb(84, 151, 233);"><strong>unseen unification</strong></span> of multiple tasks, 
+    and <span style="color:rgb(84, 151, 233);"><strong>reverse generation</strong></span>. 
+    Unlike existing methods that rely on language-based task instruction, leading to task ambiguity and weak generalization, 
+    we integrate visual in-context learning, allowing models to identify tasks from visual demonstrations. 
     Meanwhile, the inherent sparsity of visual task distributions hampers the learning of transferable knowledge across tasks. 
     To this end, we introduce Graph200K, a graph-structured dataset that establishes various interrelated tasks, 
-    enhancing task density and knowledge transfer. 
-    Furthermore, we uncover an intrinsic alignment between image infilling and in-context learning, 
-    enabling us to leverage the strong generative priors of pre-trained infilling models without modifying their architectures. 
-    Experiments demonstrate that VisualCloze achieves strong performance <span style="color:rgb(60, 253, 94);"><strong>across various in-domain tasks</strong></span> 
-    while <span style="color:rgb(84, 151, 233);"><strong>generalizing to unseen tasks</strong></span> in few-shot and zero-shot settings.
+    enhancing task density and transferable knowledge. 
+    Furthermore, we uncover that our unified image generation formulation shared a consistent objective with image infilling, 
+    enabling us to leverage the strong generative priors of pre-trained infilling models without modifying the architectures.
   </p>
 </div>
 <!-- <div class="content">
