@@ -1,6 +1,12 @@
 # VisualCloze: A Universal Image Generation Framework via Visual In-Context Learning
 
-[[Paper](https://arxiv.org/abs/2504.07960)] &emsp; [[Online Demo](https://huggingface.co/spaces/VisualCloze/VisualCloze)] &emsp; [[Project Page](https://visualcloze.github.io/)] &emsp; <br>[[🤗 Model Card](https://huggingface.co/VisualCloze/VisualCloze)] &emsp; [[🤗 Dataset Card](https://huggingface.co/datasets/VisualCloze/Graph200K)] <br>
+<div align="center">
+
+[[Paper](https://arxiv.org/abs/2504.07960)] &emsp; [[Code](https://github.com/lzyhha/VisualCloze)] &emsp; [[Online Demo](https://huggingface.co/spaces/VisualCloze/VisualCloze)] &emsp; [[Project Page](https://visualcloze.github.io/)] 
+<br>[[🤗 Model Card (<strong><span style="color:hotpink">Diffusers</span></strong>)](https://huggingface.co/VisualCloze/VisualClozePipeline-384)] &emsp; [[🤗 Model Card (LoRA)](https://huggingface.co/VisualCloze/VisualCloze)] <br> [[🤗 Dataset Card](https://huggingface.co/datasets/VisualCloze/Graph200K)] <br>
+
+
+</div>
 
 ## 📚 Citation
 
